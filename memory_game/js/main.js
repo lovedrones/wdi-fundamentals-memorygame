@@ -9,8 +9,7 @@ var cards = [
 	rank: "queen",
 	suit: "diamonds",
 	cardImage: "images/queen-of-diamonds.png"
-}
-
+},
 {
 	rank:"king",
 	suit:"hearts",
@@ -50,7 +49,7 @@ function createBoard() {
 	for (var i = 0; i < cards.length; i++) {
 		var cardElement = document.createElement('img');
 		cardElement.setAttribute('src', 'images/back.png');
-		cardElement.setAttribute('data-id', i)
+		cardElement.setAttribute('data-id', i);
 		document.getElementById('game-board').appendChild(cardElement);
 		cardElement.addEventListener('click', flipCard);
 
